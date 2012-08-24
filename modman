@@ -1,2 +1,4 @@
 app/etc/* app/etc/
 app/code/community/Meanbee/* app/code/community/Meanbee/
+app/design/adminhtml/default/default/layout/meanbee/* app/design/adminhtml/default/default/layout/meanbee/
+app/design/adminhtml/default/default/template/meanbee/bundleddocs app/design/adminhtml/default/default/template/meanbee/bundldeddocs

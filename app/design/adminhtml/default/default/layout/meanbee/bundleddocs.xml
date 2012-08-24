@@ -1,0 +1,9 @@
+<layout>
+    <adminhtml_help_view>
+        <reference name="content">
+            <block type="core/text" name="test" as="test">
+                <action method="setText"><text>Hello World!</text></action>
+            </block>
+        </reference>
+    </adminhtml_help_view>
+</layout>

@@ -22,4 +22,37 @@
             </docs>
         </helpers>
     </global>
+
+    <adminhtml>
+        <menu>
+            <system>
+                <children>
+                    <docs>
+                        <title>Extension Documentation</title>
+                        <action>adminhtml/help/view</action>
+                        <sort_order>99999</sort_order>
+                    </docs>
+                </children>
+            </system>
+        </menu>
+        <layout>
+            <updates>
+                <docs>
+                    <file>meanbee/bundleddocs.xml</file>
+                </docs>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <docs after="Mage_Adminhtml">Meanbee_BundledDocs</docs>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
