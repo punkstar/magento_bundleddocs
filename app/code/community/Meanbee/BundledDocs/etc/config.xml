@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Meanbee_BundledDocs>
+            <version>1.0.0</version>
+        </Meanbee_BundledDocs>
+    </modules>
+    <global>
+        <models>
+            <docs>
+                <class>Meanbee_BundledDocs_Model</class>
+            </docs>
+        </models>
+        <blocks>
+            <docs>
+                <class>Meanbee_BundledDocs_Block</class>
+            </docs>
+        </blocks>
+        <helpers>
+            <docs>
+                <class>Meanbee_BundledDocs_Helper</class>
+            </docs>
+        </helpers>
+    </global>
+</config>
