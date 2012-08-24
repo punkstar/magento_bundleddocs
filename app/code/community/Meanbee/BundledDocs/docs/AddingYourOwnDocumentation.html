@@ -1,1 +1,30 @@
-Testing.
+<h1>Adding your own documentation</h1>
+
+<p>Your documentation lives inside <tt>YourNamespace/YourModule/docs/</tt>.  Documentation files are plain HTML.</p>
+
+<p>Once you've written your documentation you can get it to appear in the documentation view menu by adding the following to your <tt>config.xml</tt>:</p>
+
+<pre>&lt;config&gt;
+    ...
+    &lt;docs&gt;
+        &lt;Meanbee_BundledDocs&gt;
+            &lt;title&gt;&lt;![CDATA[Meanbee: Bundled Docs Provider]]&gt;&lt;/title&gt;
+            &lt;pages&gt;
+                &lt;own_documentation&gt;
+                    &lt;title&gt;Adding Your Own Documentation&lt;/title&gt;
+                    &lt;file&gt;AddingYourOwnDocumentation.html&lt;/file&gt;
+                &lt;/own_documentation&gt;
+                &lt;example_styling&gt;
+                    &lt;title&gt;Example Markup Styling&lt;/title&gt;
+                    &lt;file&gt;ExampleDocumentationMarkup.html&lt;/file&gt;
+                &lt;/example_styling&gt;
+            &lt;/pages&gt;
+        &lt;/Meanbee_BundledDocs&gt;
+    &lt;/docs&gt;
+&lt;/config&gt;</pre>
+
+<ul>
+    <li>The <tt>Meanbee_BundledDocs</tt> section should match your extension folder structure as it's used to locate your <tt>docs/</tt> folder.</li>
+    <li>All children of the <tt>&lt;pages /&gt;</tt> tag should be unique.</li>
+    <li>The <tt>&lt;file /&gt;</tt> tag is the filename of the documentation item in your <tt>docs/</tt> folder.</li>
+</ul>
