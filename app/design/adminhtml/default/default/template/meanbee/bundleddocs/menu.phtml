@@ -1,0 +1,30 @@
+<?php /** @var $this Meanbee_BundledDocs_Block_Menu */ ?>
+
+<div id="docs_menu">
+    <h4>Documentation</h4>
+    <dl>
+        <?php foreach ($this->getDocumentedModules() as $module => $info): ?>
+        <dt><?php echo $info['title'] ?></dt>
+        <dd>
+            <ul>
+                <?php foreach ($info['pages'] as $url => $title): ?>
+                <li><a href="<?php echo $this->getDocumentationUrl($module, $url) ?>"><?php echo $this->escapeHtml($title) ?></a></li>
+                <?php endforeach ?>
+            </ul>
+        </dd>
+        <?php endforeach ?>
+    </dl>
+</div>
+
+<style type="text/css">
+    #docs_menu {
+        float: left;
+        width: 230px;
+    }
+
+    #docs_menu dd {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #ddd;
+    }
+</style>

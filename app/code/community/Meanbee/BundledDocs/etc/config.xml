@@ -55,4 +55,20 @@
             </adminhtml>
         </routers>
     </admin>
+
+    <docs>
+        <Meanbee_BundledDocs>
+            <title><![CDATA[Meanbee: Bundled Docs Provider]]></title>
+            <pages>
+                <own_documentation>
+                    <title>Adding Your Own Documentation</title>
+                    <file>AddingYourOwnDocumentation.html</file>
+                </own_documentation>
+                <example_styling>
+                    <title>Example Markup Styling</title>
+                    <file>ExampleDocumentationMarkup.html</file>
+                </example_styling>
+            </pages>
+        </Meanbee_BundledDocs>
+    </docs>
 </config>

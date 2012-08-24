@@ -1,0 +1,42 @@
+<?php /** @var $this Meanbee_BundledDocs_Block_Content */ ?>
+
+<div id="docs_content">
+
+    <?php if ($contents = $this->getDocumentationFileContents()): ?>
+
+        <?php echo $contents ?>
+
+    <?php elseif ($this->getDocumentationFilePath()): ?>
+
+        <h1>Documentation Not Found</h1>
+        <p>Sorry, but we couldn't find the documentation page you requested.</p>
+
+    <?php else: ?>
+
+        <h1>Magento Extension Documentation</h1>
+        <p>Select the extension you'd like documentation for form the menu on the left hand side.</p>
+
+    <?php endif ?>
+</div>
+
+<style type="text/css">
+    #docs_content {
+        margin-left: 260px;
+    }
+
+    #docs_content ul {
+        list-style: disc;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    #docs_content ul, #docs_content ol {
+        list-style: disc;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    #docs_content ol {
+        list-style: decimal;
+    }
+</style>
